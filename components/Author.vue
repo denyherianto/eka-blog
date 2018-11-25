@@ -2,7 +2,7 @@
   <div class="media">
     <figure class="media-left has-margin-r-6 is-marginless-l">
       <p class="image is-48x48">
-        <img :src="imageUrl" class="is-circle">
+        <img :src="imageUrl" class="is-circle" alt="Me">
       </p>
     </figure>
     <div class="media-content">
@@ -33,7 +33,7 @@ export default {
     },
     imageUrl: {
       type: String,
-      default: "/me.jpg"
+      default: "/me@48.jpg"
     }
   }
 }
