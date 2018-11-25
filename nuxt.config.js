@@ -72,6 +72,10 @@ module.exports = {
     '@nuxtjs/axios',
   ],
 
+  plugins: [
+    { src: '~plugins/google-analytics.js', ssr: false }
+  ],
+
   /*
   ** Build configuration
   */
