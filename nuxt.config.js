@@ -101,5 +101,10 @@ module.exports = {
     siteUrl: "https://istrinya.denyherianto.com",
     baseUrl: "https://eka-dash.denyherianto.com",
     title: "Eka's Daily"
-  }
+  },
+
+  server: {
+    port: 8117, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
 }

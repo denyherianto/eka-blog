@@ -9,11 +9,11 @@
             <img src="@/assets/images/logo.png" alt="eka">
           </nuxt-link>
 
-          <a role="button" class="navbar-burger has-text-black" aria-label="menu" aria-expanded="false">
+          <!--a role="button" class="navbar-burger has-text-black" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"/>
             <span aria-hidden="true"/>
             <span aria-hidden="true"/>
-          </a>
+          </a-->
         </div>
 
         <div class="navbar-menu">
@@ -38,10 +38,11 @@ export default {
   data() {
     return {
       logo: "",
+      isActive: false,
       menus: {
         latest: {
           link: "",
-          name: "Latest Post"
+          name: "Back to Home"
         }
         // experiences: {
         //   link: "experiences",

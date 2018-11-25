@@ -8,26 +8,32 @@
     <div class="media-content">
       <div class="content">
         <div class="title is-5">{{ name }}</div>
-        <div class="subtitle is-6">{{ username }}</div>
+        <div class="subtitle is-6">{{ createdAt | date }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import dayjs from "dayjs"
 export default {
+  filters: {
+    date(value) {
+      return dayjs(value).format("D MMMM YYYY")
+    }
+  },
   props: {
     name: {
       type: String,
       default: ""
     },
-    username: {
+    createdAt: {
       type: String,
       default: ""
     },
     imageUrl: {
       type: String,
-      default: "https://bulma.io/images/placeholders/128x128.png"
+      default: "/me.jpg"
     }
   }
 }
