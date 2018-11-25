@@ -13,14 +13,9 @@
             <div class="columns">
               <div class="post-author column">
                 <Author
+                  :created-at="post.created_at"
                   name="Eka Wahyu W."
-                  username="@ekawahyu"
                 />
-              </div>
-              <div class="post-date column has-text-right has-padding-t-4 title-post-time font-light is-uppercase">
-                <i class="far fa-calendar"/>
-                &nbsp;
-                {{ post.created_at | date }}
               </div>
             </div>
 
@@ -45,7 +40,6 @@
 
 <script>
 import VueMarkdown from "vue-markdown"
-import dayjs from "dayjs"
 import Breadcrumb from "~/components/Breadcrumb.vue"
 import Author from "~/components/Author.vue"
 
@@ -54,11 +48,6 @@ export default {
     VueMarkdown,
     Breadcrumb,
     Author
-  },
-  filters: {
-    date(value) {
-      return dayjs(value).format("D MMMM YYYY")
-    }
   },
   data() {
     return {
