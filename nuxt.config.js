@@ -99,7 +99,7 @@ module.exports = {
 
   env: {
     siteUrl: "https://istrinya.denyherianto.com",
-    baseUrl: "http://localhost:1337",
+    baseUrl: "https://eka-dash.denyherianto.com",
     title: "Eka's Daily"
   }
 }
