@@ -65,7 +65,7 @@ module.exports = {
     { src: 'bulma/bulma.sass', lang: 'sass' },
     { src: 'bulma-utilities/sass/bulma-utilities.sass', lang: 'sass' },
     { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' },
-    "~assets/css/style.css?v=181126",
+    "~assets/css/style.css",
   ],
 
   modules: [
