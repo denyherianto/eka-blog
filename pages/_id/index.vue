@@ -26,7 +26,7 @@
 
       <div class="posts-wrapper has-margin-b-2">
         <div class="cover has-margin-b-4">
-          <img :src="imageUrl">
+          <img :src="imageUrl" :alt="post.title">
         </div>
         <div class="container">
           <div class="content font-light is-size-5">
