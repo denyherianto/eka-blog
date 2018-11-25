@@ -13,18 +13,6 @@ module.exports = {
         content: "A little girl from Ponorogo with a huge dream about life and family est. 1992."
       },
       {
-        name: "og:title",
-        content: "Eka's Daily",
-      },
-      {
-        name: "og:image",
-        content: "/logo.png"
-      },
-      {
-        name: "og:url",
-        content: process.env.siteUrl
-      },
-      {
         name: "og:description",
         content: "A little girl from Ponorogo with a huge dream about life and family est. 1992."
       },

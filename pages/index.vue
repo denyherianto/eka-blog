@@ -55,6 +55,24 @@ export default {
       sort: "created_at:desc"
     }
   },
+  head() {
+    return {
+      meta: [
+        {
+          name: "og:title",
+          content: "Eka's Daily",
+        },
+        {
+          name: "og:image",
+          content: "/logo.png"
+        },
+        {
+          name: "og:url",
+          content: process.env.siteUrl
+        },
+      ]
+    }
+  },
   computed: {
     start() {
       return (this.page - 1) * this.limit
